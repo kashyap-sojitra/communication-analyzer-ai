@@ -15,11 +15,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Vocalist AI",
   description: "Vocalist AI analyzes communication tone, intent, confidence, and empathy to provide actionable feedback and rewrites.",
-  icons: {
-    icon: "/vocalist-mark.svg",
-    shortcut: "/vocalist-mark.svg",
-    apple: "/vocalist-mark.svg",
-  },
 };
 
 export default function RootLayout({
