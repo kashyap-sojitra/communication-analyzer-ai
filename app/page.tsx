@@ -2,9 +2,10 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
-  BrainCircuit, Layers
+  Layers
 } from "lucide-react";
 import { VoiceAnalysisResult } from "@/lib/voice-analyzer";
 import { InputPanel } from "@/components/InputPanel";
@@ -61,9 +62,15 @@ export default function Home() {
 
         <header className="flex justify-between items-center mb-24 animate-in fade-in slide-in-from-top-4 duration-1000">
           <div className="flex items-center gap-4 group cursor-default">
-            <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center shadow-2xl shadow-indigo-500/20 group-hover:scale-110 transition-transform duration-500">
-              <BrainCircuit className="text-white w-7 h-7" />
-            </div>
+            {/* <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center shadow-2xl shadow-indigo-500/20 group-hover:scale-110 transition-transform duration-500"> */}
+              <Image
+                src="/vocalist-mark.svg"
+                alt="Vocalist AI logo"
+                width={50}
+                height={50}
+                priority
+              />
+          
             <div className="hidden sm:block">
               <h1 className="text-2xl font-black tracking-tight text-white uppercase italic">Vocalist <span className="text-indigo-500">AI</span></h1>
               <div className="flex items-center gap-2">
